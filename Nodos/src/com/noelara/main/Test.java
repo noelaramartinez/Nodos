@@ -11,14 +11,14 @@ public class Test {
 
 		System.out.println(aNodos.toString());
 
-		System.out.println("la profundidad máxima del árbol de nodos es: " + maxDepth(aNodos.getNodoRaiz()));
+		System.out.println("la profundidad mÃ¡xima del Ã¡rbol de nodos es: " + maxDepth(aNodos.getNodoRaiz()));
 	}
 
-	/* Obtiene la profundidad máxima de un arbol donde solo se recibe el nodo raíz 
+	/* Obtiene la profundidad mÃ¡xima de un arbol donde solo se recibe el nodo raÃ­z 
 	 * y referencias a los nodos inmediatos
 	 * 
-	 * @param	Nodo 	el nodo Raíz
-	 * @return 	int 	el valor entero de la profundidad máxima 
+	 * @param	Nodo 	el nodo RaÃ­z
+	 * @return 	int 	el valor entero de la profundidad mÃ¡xima 
 	 */
 	public static int maxDepth(Nodo nodo) {
 
@@ -44,7 +44,7 @@ public class Test {
 				nodoPadre = n;
 				nodoHijo = n.getPrimerHijo();
 
-				while (nodoPadre.TienePadre()) {
+				while (nodoPadre.TienePadre() || nodoHijo.tieneMasHijos(nodoAux)) {
 					System.out.println("id unico: -------" + nodoHijo.getRefNodo());
 					if (nodoAux == null ? nodoHijo.tieneMasHijos() : nodoHijo.tieneMasHijos(nodoAux)) {
 						nodoPadre = nodoHijo;
